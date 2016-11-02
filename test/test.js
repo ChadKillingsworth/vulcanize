@@ -967,7 +967,7 @@ suite('Vulcan', function() {
         assert(domModule);
         var template = dom5.query(domModule, dom5.predicates.hasTagName('template'));
         assert(template);
-        var style = dom5.query(template.childNodes[0], matchers.CSS);
+        var style = dom5.query(template.content, matchers.CSS);
         assert(style);
         done();
       };
@@ -983,7 +983,7 @@ suite('Vulcan', function() {
         assert(domModule);
         var template = dom5.query(domModule, dom5.predicates.hasTagName('template'));
         assert(template);
-        var style = dom5.query(template.childNodes[0], matchers.CSS);
+        var style = dom5.query(template.content, matchers.CSS);
         assert(style);
         done();
       };
